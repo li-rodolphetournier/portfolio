@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* Import Brittany font - Plusieurs méthodes pour assurer le chargement */
+@import url('https://fonts.cdnfonts.com/css/brittany-signature');
+
+/* Déclaration @font-face pour Brittany Signature */
+@font-face {
+  font-family: 'Brittany Signature';
+  src: url('https://fonts.cdnfonts.com/s/94208/BrittanySignature.woff2') format('woff2'),
+       url('https://fonts.cdnfonts.com/s/94208/BrittanySignature.woff') format('woff'),
+       url('https://fonts.cdnfonts.com/s/94208/BrittanySignature.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Alternative: déclaration avec un nom différent */
+@font-face {
+  font-family: 'Brittany';
+  src: url('https://fonts.cdnfonts.com/s/94208/BrittanySignature.woff2') format('woff2'),
+       url('https://fonts.cdnfonts.com/s/94208/BrittanySignature.woff') format('woff'),
+       url('https://fonts.cdnfonts.com/s/94208/BrittanySignature.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  /* Remove default list styles */
+  ul, ol {
+    list-style: none;
+  }
+}
