@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import { cvData } from '@/data/cvData';
+import { useGrayscaleImage } from '@/hooks/useGrayscaleImage';
 
 const Header = () => {
   const { personal } = cvData;
+  const grayscaleImageSrc = useGrayscaleImage('/profile-photo.jpg');
 
   return (
     <motion.header
@@ -69,7 +71,7 @@ const Header = () => {
             {/* Profile Picture - Circular */}
             <div className="w-32 h-32 rounded-full border-2 border-black overflow-hidden">
               <img 
-                src="/profile-photo.jpg" 
+                src={grayscaleImageSrc} 
                 alt="Rodolphe Tournier" 
                 className="w-full h-full object-cover"
               />
