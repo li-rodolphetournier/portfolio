@@ -1,7 +1,7 @@
-@import "tailwindcss";
-
 /* Import Brittany font - Plusieurs méthodes pour assurer le chargement */
 @import url('https://fonts.cdnfonts.com/css/brittany-signature');
+
+@import "tailwindcss";
 
 /* Déclaration @font-face pour Brittany Signature */
 @font-face {
